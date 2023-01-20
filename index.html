@@ -472,8 +472,10 @@
           <div class="subscribe-box">
             <p class="footer-header">Підпишіться на розсилку</p>
             <form class="online-form">
+              <label for="sub-email" class="visually-hidden"></label>
               <input
                 type="email"
+                id="sub-email"
                 class="subscribe-input subscribe-item"
                 name="subscribe-email"
                 placeholder="E-mail"
@@ -500,12 +502,13 @@
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
           <div class="modal-field">
-            <label class="input-text">Ім'я</label>
+            <label for="name" class="input-text">Ім'я</label>
             <div class="input-wrap">
               <input
                 type="text"
                 class="modal-input"
                 name="user-name"
+                id="name"
                 required
                 minlength="2"
                 autocomplete="on"
@@ -516,11 +519,12 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="input-text">Телефон</label>
+            <label for="tel" class="input-text">Телефон</label>
             <div class="input-wrap">
               <input
                 type="tel"
                 class="modal-input"
+                id="tel"
                 name="user-tel"
                 autocomplete="on"
                 required
@@ -531,11 +535,12 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="input-text">Пошта</label>
+            <label for="email" class="input-text">Пошта</label>
             <div class="input-wrap">
               <input
                 type="email"
                 class="modal-input"
+                id="email"
                 name="user-email"
                 autocomplete="on"
               />
@@ -545,7 +550,7 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="input-text">Коментар</label>
+            <label for="user-coment" class="input-text">Коментар</label>
             <textarea
               name="user-text"
               id="user-coment"

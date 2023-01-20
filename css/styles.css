@@ -473,6 +473,7 @@ body {
     line-height: 1.25;
     letter-spacing: 0.03em;
     outline: transparent;
+    transition: border var(--transition);
 }
 .subscribe-input::hover {
     border:none;
