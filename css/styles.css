@@ -177,7 +177,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: var(--primary-background-color);
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -185,6 +185,11 @@ body {
     cursor: pointer;
     padding: 10px 32px;
     margin: auto;
+    transition: background-color var(--transition);
+}
+.btn:hover,
+.btn:focus {
+    background: #188CE8;
 }
 
 
@@ -397,6 +402,9 @@ body {
 .footer-email:focus {
     color: var(--accent-color);
 }
+.address-wrap {
+    margin-right: 70px;
+}
 .footer-tel:hover,
 .footer-tel:focus {
     color: var(--accent-color);
@@ -415,7 +423,6 @@ body {
 }
 .footer-box {
     display: flex;
-    gap: 70px;
     align-items: baseline;
 }
 .footer-soc-list {
@@ -443,6 +450,9 @@ body {
 .footer-soc-link:focus {
     background-color: var(--accent-color);
 }
+.soc-wrap {
+    margin-right: 93px;
+}
 .online-form {
     display: flex;
     justify-content: center;
@@ -464,7 +474,6 @@ body {
 .subscribe-input {
     width: 358px;
     height: 50px;
-    margin-bottom: 94px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
@@ -482,7 +491,6 @@ body {
     display:flex;
     margin-top: 0;
     gap: 10px;
-    margin-bottom: 94px;
     fill: #FFFFFF;
 }
 
@@ -607,7 +615,7 @@ body {
 .modal {
     width: 528px;
     min-height: 581px;
-    background-color: #FFFFFF;
+    background-color: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
         0px 1px 1px rgba(0, 0, 0, 0.14), 
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -625,7 +633,7 @@ body {
     top: 8px;
     width: 30px;
     height: 30px;
-    background: #FFFFFF;
+    background: var(--primary-background-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     padding: 6px;
@@ -720,7 +728,7 @@ body {
 }
 .check-text {
     font-size: 14px;
-    color: #555555;
+    color: var(--secondary-text-color);
     display: flex;
     align-items: center;
     position: relative;
@@ -739,10 +747,11 @@ body {
 .modal-check:checked+.check-text span {
     background-color: var(--accent-color);
     border: none;
-    fill: #FFFFFF;
+    fill: var(--primary-background-color);
 }
 .modal-btn {
     margin-top: 30px;
+    padding: 10px 52px;
 }
 .privacy-link {
     margin-left: 8px;
