@@ -677,6 +677,7 @@ body {
     transition: border-color var(--transition), fill var(--transition);
     position: relative;
     padding: 11px 42px;
+    cursor: pointer;
 }
 .modal-input::placeholder {
     font-weight: 400;
@@ -728,9 +729,11 @@ body {
 }
 .check-text {
     font-size: 14px;
+    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
 }
 .check-text span {
@@ -743,6 +746,7 @@ body {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    cursor: pointer;
 }
 .modal-check:checked+.check-text span {
     background-color: var(--accent-color);
